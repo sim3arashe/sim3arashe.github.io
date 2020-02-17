@@ -66,16 +66,22 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">pholder</a>
+            <a class="nav-link js-scroll-trigger" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Medical-Aids</a>
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Branches</a>
+            <a class="nav-link js-scroll-trigger" href="#bookings">bookings</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
+            <a class="nav-link js-scroll-trigger" href="#branches">Branches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#doctors">Doctors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact-section">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -84,7 +90,7 @@
 
 
   <!-- start Banner -->
-        <div class="ftco-blocks-cover-1">
+        <div class="ftco-blocks-cover-1" id="home">
         <div class="ftco-cover-1 overlay" style="background-image: url('images/hero_1.jpg')">
           <div class="container">
             <div class="row align-items-center">
@@ -101,30 +107,61 @@
 
     <!-- end Banner -->
 
-  <!-- START QOUTE ARE -->
+  <!-- START booking AREA -->
 
-      <div class="site-section">
+      <div class="site-section" >
         <div class="container">
           <div class="row">
             <div class="col-md-5 pr-md-5 mr-auto">
-              <h2 class="line-bottom">Planning on making a visit here? Get A Quotation</h2>
-              <p>Please Note that qouatations are only valid for 72 hours.</p>
+              <h2 class="line-bottom">Planning on making a visit here? Request An Appointment</h2>
+              <p>Please Note that appointments will be approved via phone call to verify if time and date is available .</p>
             </div>
             <div class="col-md-6">
-              <div class="quick-contact-form bg-white">
-                  <h2>Get Quotation</h2>
+              <div class="quick-contact-form bg-white" id="bookings">
+                  <h2>Request Appointment</h2>
                   <form action="#" method="">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Name">
+                      <input type="text" class="form-control" placeholder="Full Name Of Patient">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Medical Aid</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>NONE</option>
+                        <option>CIMAS</option>
+                        <option>FIRST MUTUAL HEALTH</option>
+                        <option>NORTHERN ALLIANCE</option>
+                        <option>BONVIE</option>
+                        <option>CELLMED</option>
+                        <option>BUPA</option>
+                        <option>FIDELITY LIFE(FLIMAS)</option>
+                        <option>GENERATION HEALTH</option>
+                        <option>LIBERTY BLUE</option>
+                        <option>STEWARD HEALTH</option>
+                        <option>MASCA</option>
+                        <option>OTHER</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <input class="form-control" type="tel" placeholder="Phone Number" id="example-tel-input">
+                    </div>
+
+
+
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <input class="form-control" type="date" placeholder="Date" id="date-input">
+                      </div>
+                      <div class="col-md-6">
+                      <input class="form-control" type="time" placeholder="Time" id="example-time-input">
+                    </div>
                     </div>
                     <div class="form-group">
                       <input type="email" class="form-control" placeholder="Email">
                     </div>
                     <div class="form-group">
-                      <textarea name="" class="form-control" id="" cols="30" rows="5" placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-group">
-                      <input type="submit" value="Send Message" class="btn btn-primary px-5">
+                      <input type="submit" value="Send Request" class="btn btn-primary px-5">
                     </div>
                   </form>
                 </div>
@@ -132,15 +169,15 @@
           </div>
         </div>
       </div>
-  <!-- END QOUTE AREA -->
+  <!-- END BOOKING AREA -->
 
   <!-- START SERVICES -->
 
       <div class="site-section" style="background-color: #487047;">
-        <div class="container">
+        <div class="container" id="services">
           <div class="row align-items-stretch">
 
-            <ul class="nav nav-tabs md-tabs" id="myTabEx" role="tablist">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                   <li class="nav-item">
                     <a class="nav-link active show" id="home-tab-ex" data-toggle="tab" href="#home-ex" role="tab" aria-controls="home-ex"
                       aria-selected="true">Services Offered</a>
@@ -149,10 +186,7 @@
                     <a class="nav-link" id="profile-tab-ex" data-toggle="tab" href="#profile-ex" role="tab" aria-controls="profile-ex"
                       aria-selected="false">Common Eye Problems</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="contact-tab-ex" data-toggle="tab" href="#contact-ex" role="tab" aria-controls="contact-ex"
-                      aria-selected="false">Downloads</a>
-                  </li>
+
                 </ul>
                 <div class="tab-content pt-5" id="myTabContentEx">
                   <div class="tab-pane fade active show" id="home-ex" role="tabpanel" aria-labelledby="home-tab-ex">
@@ -233,21 +267,359 @@
 
                   </div>
                   <div class="tab-pane fade" id="profile-ex" role="tabpanel" aria-labelledby="profile-tab-ex">
-                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1
-                      labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft
-                      beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad
-                      vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar
-                      helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes
-                      anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party
-                      scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
-                  </div>
-                  <div class="tab-pane fade" id="contact-ex" role="tabpanel" aria-labelledby="contact-tab-ex">
-                    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro
-                      fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone
-                      skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings
-                      gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork
-                      biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl
-                      craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+
+
+                    <div class="accordion" id="accordionExample">
+                          <div class="card">
+                            <div class="card-header" id="headingOne">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Far sightedness (Hyperopia) What does it mean to be far sighted?
+                                </button>
+                              </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body">
+                                  <q cite="https://www.psmi.co.zw/">This is a condition where one is unable to see things clearly, especially if the object is relatively close to the eyes, owing to the focusing of rays of light by the eye at a point behind the retina this is also referred to as hyperopic. As such this makes a person to see objects that are far off more clearly than ones that are near. Common signs include:</q>
+
+                                  <ul class=" ml-auto">
+                                    <li class="">
+                                      <p class=" js-scroll-trigger">Eyestrain</p>
+                                    </li>
+                                    <li class="">
+                                      <p class=" js-scroll-trigger">Squinting</p>
+                                    </li>
+                                    <li class="">
+                                      <p class=" js-scroll-trigger">Blurry vision especially for close object</p>
+                                    </li>
+                                    <li class="">
+                                      <p class=" js-scroll-trigger">Persistent Headaches</p>
+                                    </li>
+                                  </ul>
+                                  <h2>Treatment</h2>
+                                   Hyperopia can be corrected by eyeglasses, contact lenses or surgery.
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingTwo">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Far sightedness (Hyperopia) What does it mean to be far sighted?
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <q cite="https://www.psmi.co.zw/">This is a very common eye condition that causes distant objects to appear blurred, while close objects can be seen clearly. Most tech savvy youths are at risk to get this condition as they spend most of their time on technological devices.</br></br>
+                                If you can see well enough to read what’s on your laptop or in a book, but you struggle to see what’s on the television or a movie screen, you may be near-sighted. Sometimes people with undiagnosed myopia will have headaches and eyestrain from struggling to clearly see things in the distance. Common signs include: </q>
+
+                                  <ul class=" ml-auto">
+                                    <li class="">
+                                      <p class=" js-scroll-trigger">Eyestrain</p>
+                                    </li>
+                                    <li class="">
+                                      <p class=" js-scroll-trigger">Squinting</p>
+                                    </li>
+                                    <li class="">
+                                      <p class=" js-scroll-trigger">Blurry vision especially for far object</p>
+                                    </li>
+                                    <li class="">
+                                      <p class=" js-scroll-trigger">Persistent Headaches</p>
+                                    </li>
+                                  </ul>
+                                  <h2>Treatment</h2>
+                                   Myopia can be corrected by eyeglasses, contact lenses or surgery.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingThree">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Astigmatism
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <q cite="https://www.allaboutvision.com/" > <strong>Astigmatism</strong> is a type of refractive error caused by the irregularities in the shape of a person’s cornea. In this condition, the eye fails to focus the light equally on the retina leading to blurred or distorted vision. It can be present at the time of birth, or can develop gradually in life.</br></br>
+
+                                Astigmatism is a common eye condition which usually occurs with myopia (nearsightedness) or hyperopia (farsightedness) and can be easily diagnosed with a simple eye exam.</br></br>
+
+                                Astigmatism is a refractive error and is not an eye disease or eye health issue.</br></br>
+
+                                Astigmatism is simply a problem with how the eye focuses light. Common signs include:</q>
+
+                                  <ul class=" ml-auto">
+                                    <li class="">
+                                      <p class=" js-scroll-trigger">Eyestrain</p>
+                                    </li>
+                                    <li class="">
+                                      <p class=" js-scroll-trigger">Squinting</p>
+                                    </li>
+                                    <li class="">
+                                      <p class=" js-scroll-trigger">Blurry vision</p>
+                                    </li>
+                                    <li class="">
+                                      <p class=" js-scroll-trigger">Persistent Headaches</p>
+                                    </li>
+                                  </ul>
+                                  <h2>Treatment</h2>
+                                   Astigmatism can be corrected by eyeglasses, contact lenses or surgery.
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                     Presbyopia
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <q cite="https://www.allaboutvision.com/" > <strong>Presbyopia</strong> is the normal loss of near focusing ability that occurs with age.  Most people begin to notice the effects of presbyopia sometime after age 40, when they start having trouble seeing small print clearly — including text messages on their phone.</br></br>
+
+                                    You can't escape presbyopia, even if you've never had a vision problem before. Even people who are nearsighted will notice that   their near vision blurs when they wear their usual eyeglasses or contact lenses to correct distance vision.</q>
+
+                                    <h2>Presbyopia Symptoms</h2>
+                                    <p> When you become presbyopic, you either have to hold your smartphone and other objects and reading material (books, magazines, menus, labels, etc.) farther from your eyes to see them more clearly.</br></br>
+
+                                      Unfortunately, when you move things farther from your eyes they get smaller in size, so this is only a temporary and partially successful solution to presbyopia.</br></br>
+
+                                      If you can still see close objects pretty well, presbyopia can cause headaches, eye strain and visual fatigue that makes reading and other near vision tasks less comfortable and more tiring.</p>
+
+
+                                    <h2>Treatment</h2>
+                                     <p>Presbyopia can be treated with eyeglasses (including reading glasses), contact lenses and vision surgery.<p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingFive">
+                                  <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                       Cataracts
+                                    </button>
+                                  </h2>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                    <q cite="https://www.allaboutvision.com/" > <strong>Cataract</strong> is the clouding of the eye's natural lens. It is the most common cause of vision loss in people over age 40 and is also the principal cause of blindness in the world. Types of cataracts include:
+
+                                      <ul class=" ml-auto">
+                                        <li class="">
+                                          <p class=" js-scroll-trigger">A <strong>subcapsular cataract</strong> occurs at the back of the lens. People with diabetes or those taking high doses of steroid medications have a greater risk of developing a subcapsular cataract.</p>
+                                        </li>
+                                        <li class="">
+                                          <p class=" js-scroll-trigger">A <strong>nuclear cataract</strong> forms deep in the central zone (nucleus) of the lens. Nuclear cataracts usually are associated with aging.
+                                          </p>
+                                        </li>
+                                        <li class="">
+                                          <p class=" js-scroll-trigger">A <strong>cortical cataract</strong> is characterized by white, wedge-like opacities that start in the periphery of the lens and work their way to the center in a spoke-like fashion. This type of cataract occurs in the lens cortex, which is the part of the lens that surrounds the central nucleus</p>
+                                        </li>
+
+                                      </ul>
+
+                                    </q>
+
+                                      <h2>Cataract Symptoms And Signs</h2>
+                                      <p> At first, a cataract has little effect on your vision. You may notice that your vision is blurred a little, like looking through a cloudy piece of glass or viewing an impressionist painting.</br></br>
+
+                                        A cataract may make light from the sun or a lamp seem too bright or glaring. Or you may notice when you drive at night that the oncoming headlights cause more glare than before. Colors may not appear as bright as they once did.</br></br>
+
+                                        The type of cataract you have will affect exactly which symptoms you experience and how soon they will occur. When a nuclear cataract first develops, it can bring about a temporary improvement in your near vision, called "second sight."</br></br>
+
+                                        Unfortunately, the improved vision is short-lived and will disappear as the cataract worsens. On the other hand, a subcapsular cataract may not produce any symptoms until it's well-developed.</br></br>
+
+                                        If you think you have a cataract, see an eye doctor for an exam to find out for sure.</p>
+
+
+                                      <h2>Treatment</h2>
+                                       <p>When symptoms begin to appear, you may be able to improve your vision for a while using new glasses, strong bifocals, magnification, appropriate lighting or other visual aids.</br></br>
+
+                                         Think about surgery when your cataracts have progressed enough to seriously impair your vision and affect your daily life.</br></br>
+
+                                         Many people consider poor vision an inevitable fact of aging, but cataract surgery is a simple, relatively painless procedure to regain vision.</br></br>
+
+                                         During surgery, the surgeon will remove your clouded lens and in most cases replace it with a clear, plastic intraocular lens (IOL).<p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingSix">
+                                  <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                       Glaucoma
+                                    </button>
+                                  </h2>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                    <q cite="https://www.allaboutvision.com/" > <strong>Glaucoma</strong> is a serious eye condition that can cause blindness. It damages the optic nerve
+
+                                    , which carries information from your eyes to the visual center in your brain. This damage can result in permanent vision loss.</br></br>
+
+                                    The most common type of glaucoma has no early warning signs and can only be detected during a comprehensive eye exam. If undetected and untreated, glaucoma first causes peripheral vision loss and eventually can lead to blindness.</br></br>
+
+                                    By the time you notice vision loss from glaucoma, it's too late. The lost vision cannot be restored, and it's very likely you may experience additional vision loss, even after glaucoma treatment begins.</br></br>
+
+                                    The only way to protect yourself and your family from vision loss and even blindness from glaucoma is to visit an eye doctor for routine comprehensive eye exams.</br></br>
+
+                                    Only an optometrist or ophthalmologist is trained to spot the early warning signs of glaucoma and to begin glaucoma treatment before vision loss occurs.
+                                    </q>
+
+                                      <h2>What Causes Glaucoma</h2>
+                                      <p> In most cases, glaucoma is caused by higher-than-normal pressure inside the eye — a condition called ocular hypertension.
+
+                                        But sometimes glaucoma can occur even when pressure inside the eye — called intraocular pressure
+                                        or "IOP" — is normal </br></br>
+                                        <img src="https://images.ctfassets.net/u4vv676b8z52/5TYlMTFdJG3hdmQwvwQiPO/7db1917e8207741bfb08d91920244190/glaucoma-pressure-330x220.jpg?w=677&q=90"</img>
+                                        <p>In most types of glaucoma, optic nerve damage and vision loss occurs because the pressure inside the eye (IOP) is too high.</p>
+                                      </p>
+
+
+                                      <h2>Treatment</h2>
+                                       <p>There are several types of glaucoma treatment, including medicated eye drops, micro-surgery, laser treatments and other eye surgery.</br></br>
+
+                                         It's important to realize that glaucoma treatments may prevent additional vision loss, but they will not restore vision already lost to the disease.</br></br>
+
+                                         Depending on the type, severity and responsiveness of your glaucoma to treatment, your eye doctor may prescribe medical treatment, surgery or a combination of both.<p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingSeven">
+                                  <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                       Conjunctivitis (Pink Eye)
+                                    </button>
+                                  </h2>
+                                </div>
+                                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                    <q cite="https://www.allaboutvision.com/" >
+                                      <img src="https://www.allaboutvision.com/static/8c73b8c58ef025a04fb64b7ed0356204/e3b6c/pink-eye-678x450-compressor.jpg " width="320px" height="150px"</img></br>
+                                      Conjunctivitis — also known as "pink eye," is inflammation of the thin, clear covering of the white of the eye and the inside of the eyelids (conjunctiva).</br></br>
+
+                                      Conjunctivitis can have several causes (see below), but many eye doctors use the term "pink eye" to refer only to viral conjunctivitis, a highly contagious infection caused by a variety of viruses.</br></br>
+
+                                      "Pink eye" may sound scary to hear, but this common eye problem typically is easily treated. Moreover, with a few simple precautions, pink eye often can be avoided. One type of conjunctivitis, though, can cause serious vision issues if left untreated. See your eye doctor if you are concerned about your pink eye.
+
+                                      <ul class=" ml-auto">
+                                        <li class="">
+                                          <p class=" js-scroll-trigger"><b>Viral conjunctivitis.</b> Caused by a virus, like the common cold. This type of pink eye is very contagious, but usually will clear up on its own within several days without medical treatment. </p>
+                                        </li>
+                                        <li class="">
+                                          <p class=" js-scroll-trigger"><b>Bacterial conjunctivitis.</b> Caused by bacteria, this type of conjunctivitis can cause serious damage to the eye if left untreated.
+                                          </p>
+                                        </li>
+                                        <li class="">
+                                          <p class=" js-scroll-trigger"><b>Allergic conjunctivitis.</b> Caused by eye irritants such as pollen, dust and animal dander among susceptible individuals. Allergic conjunctivitis may be seasonal (pollen) or flare up year-round (dust; pet dander).</p>
+                                        </li>
+                                      </ul>
+
+                                    </q>
+
+                                      <h2>What Causes Pink Eye</h2>
+                                      <p> In most cases, glaucoma is caused by higher-than-normal pressure inside the eye — a condition called ocular hypertension.
+                                      </p>
+
+
+                                      <h2>Conjunctivitis Treatment</h2>
+                                       <p>As you would expect, the treatment of pink eye depends on the type of conjunctivitis you have:
+                                         <ul class=" ml-auto">
+                                           <li class="">
+                                             <p class=" js-scroll-trigger"><b>Viral conjunctivitis</b> treatment In most cases, viral conjunctivitis will run its course over a period of several days and no medical treatment is required. Applying a cold, wet washcloth to the eyes several times a day can relieve symptoms of viral conjunctivitis.</p>
+                                           </li>
+                                           <li class="">
+                                             <p class=" js-scroll-trigger"><b>Allergic conjunctivitis</b> treatment Allergy medications often can help prevent or shorten bouts of allergic conjunctivitis.
+                                             </p>
+                                           </li>
+                                           <li class="">
+                                             <p class=" js-scroll-trigger"><b>Allergic conjunctivitis.</b> Caused by eye irritants such as pollen, dust and animal dander among susceptible individuals. Allergic conjunctivitis may be seasonal (pollen) or flare up year-round (dust; pet dander).</p>
+                                           </li>
+                                         </ul>
+                                         Often it can be difficult to tell the type of conjunctivitis you have by symptoms alone. Also, sometimes other eye or health conditions may be causing your pink eye symptoms.</br></br>
+
+                                         Conditions associated with conjunctivitis include dry eyes. Also, bacterial conjunctivitis sometimes can lead to very serious eye problems potentially causing permanent vision loss.</br></br>
+
+                                         For these reasons, anytime you develop red, irritated eyes, you should call an eye doctor immediately and schedule an eye exam.</br></br>
+
+                                         If you wear contact lenses and have red, irritated eyes, remove your lenses and wear only your spectacles until your eye doctor has had a chance to examine your eyes.
+
+
+                                         <p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingEight">
+                                  <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                      Amblyopia (Lazy Eye)
+                                    </button>
+                                  </h2>
+                                </div>
+                                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                    <q cite="https://www.allaboutvision.com/" ><b>Lazy eye</b> is a vision development disorder in which an eye fails to achieve normal visual acuity, even with prescription eyeglasses or contact lenses.</br></br>
+
+                                      Amblyopia typically begins during infancy and early childhood. In most cases, only one eye is affected. But in some cases, amblyopia can occur in both eyes.</br></br>
+
+                                      If lazy eye is detected early in life and promptly treated, reduced vision can be avoided. But untreated lazy eye can cause permanent loss of vision in the affected eye.</br></br>
+
+                                      It's estimated that about 2 to 3 percent of the U.S. population has some degree of amblyopia.
+                                    </q></br>
+                                      <img src="https://www.allaboutvision.com/static/7b6a61ff538d673c575d66f43cb5827c/e3b6c/Hero_Article_EnUK_Conditions-Amblyopia.jpg"height="240px" width="380px">
+                                      <h2>Amblyopia signs and symptoms</h2>
+                                      <p> Because amblyopia typically is a problem of infant vision development, symptoms of lazy eye sometimes can be hard to spot.</br></br>
+
+                                        A common cause of amblyopia is misalignment of the eyes — a condition called strabismus.</br>
+
+                                        If you notice your baby or young child has crossed eyes or some other apparent eye misalignment, schedule an appointment with an eye doctor near you immediately — preferably with an optometrist or ophthalmologist who specializes in children's vision.
+                                      </p>
+
+                                      <h2>What causes a lazy eye?</h2>
+                                      <p>
+                                        <ul class=" ml-auto">
+                                          <li class="">
+                                            <p class=" js-scroll-trigger"><B>Strabismic amblyopia.</B> Strabismus is the most common cause of lazy eye. To avoid double vision caused by poorly aligned eyes, the brain will ignore the visual input from the misaligned eye, leading to amblyopia in that eye (the "lazy eye"). This type of amblyopia is called strabismic amblyopia.</p>
+                                          </li>
+                                          <li class="">
+                                            <p class=" js-scroll-trigger"><b>Refractive amblyopia.</b> Sometimes, a lazy eye is caused by unequal refractive errors in the two eyes, despite perfect eye alignment. For example, one eye may have significant nearsightedness or farsightedness, while the other eye does not. Or one eye may have significant astigmatism and the other eye does not. In such cases, the brain relies on the eye that has less uncorrected refractive error and "tunes out" the blurred vision from the other eye, causing amblyopia in that eye from disuse. This type of lazy eye is called refractive amblyopia (or anisometropic amblyopia)
+                                            </p>
+                                          </li>
+                                          <li class="">
+                                            <p class=" js-scroll-trigger"><b>Deprivation amblyopia.</b> This is lazy eye caused by something that obstructs light from entering and being focused in a baby's eye, such as a congenital cataract. Prompt treatment of congenital cataracts with cataract surgery is necessary to allow normal visual development to occur and prevent a visual disability from lazy eye.</p>
+                                          </li>
+                                        </ul>
+                                      </p>
+
+
+                                      <h2>Treatment</h2>
+                                       <p>Treatment of strabismic amblyopia (lazy eye caused by misaligned eyes) often involves strabismus surgery to align the eyes, followed by use of an eye patch on the dominant eye and some form of vision therapy (specific lazy eye exercises) to help both eyes work together equally as a team.</br></br>
+
+                                         It may be necessary to wear an eye patch for several hours each day or even all day long for several days or weeks to force the brain to start using the lazy eye normally.</br></br>
+
+                                         If you have a lot of trouble with your child taking off the eye patch, you might consider a specially designed prosthetic contact lens that prevents light from entering the good eye but does not affect your child's appearance.</br></br>
+
+                                         Though prosthetic contact lenses are more costly than a simple eye patch and require a contact lens exam and fitting, they can work wonders in difficult cases of amblyopia treatment when compliance with eye patching is poor.</br></br>
+
+                                         In some children, atropine eye drops have been successfully used to treat a lazy eye. One drop is placed in your child's good eye each day. (Your eye doctor will give you instructions how to do this.)<p>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                          </div>
+                        </div>
+
+
+
+
                   </div>
                 </div>
 
@@ -255,32 +627,9 @@
 
         </div>
       </div>
-
-  <!--  Modal Content -->
-
-  <!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#eye-test">Open Modal</button>
-<!-- End Trigger the modal with a button -->
-
-    <div id="eye-test" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <centre><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></centre>
-        </div>
-      </div>
-
-      </div>
     </div>
+
+
 
   <!-- END SERVICES  -->
 
@@ -332,7 +681,36 @@
       </div>
 
 
+
+
     </div>
+    <!--  Modal Content -->
+
+    <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#eye-test">Open Modal</button>
+  <!-- End Trigger the modal with a button -->
+
+      <div id="eye-test" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <centre><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></centre>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <!-- End Modal Button -->
   </div>
 
   <!-- End Payment optoins -->
@@ -341,7 +719,7 @@
     <div class="site-section"style="background-color: #F0F0F0;">
         <center> <h2>Our Branch Network</h2></center>
 
-      <div class="container">
+      <div class="container" id="branches">
 
         <ul class="nav nav-tabs md-tabs" id="myTabEx" role="tablist">
           <li class="nav-item dropdown">
@@ -501,8 +879,8 @@
 <!-- Contact Form -->
 
 
-    <div class="site-section bg-light" id="contact-section">
-      <div class="container">
+    <div class="site-section bg-light" >
+      <div class="container" id="contact-section">
         <div class="row justify-content-center text-center">
         <div class="col-7 text-center mb-5">
           <h2>Contact Us</h2>
@@ -642,11 +1020,11 @@
 
 <!--End Live Chat -->
 
-<!-- End Setmore booking link -->
+<!-- End booking link -->
 
-<a id="Setmore_button_iframe" style="float:none; position:fixed; right:-2px; top: 25%; z-index:20000" href="booking.html"><img border="none" src="https://my.setmore.com/webapp/images/bookappt/Setmore-Book-Now.png" alt="Book an appointment using SetMore" /></a>
+<a id="booking button" style="float:none; position:fixed; right:-2px; top: 25%; z-index:20000" href="#booking"><img border="none" src="https://my.setmore.com/webapp/images/bookappt/Setmore-Book-Now.png" alt="Request Appointment" /></a>
 
-<!-- End Setmore booking link -->
+<!-- End booking link -->
 
 </body>
 
