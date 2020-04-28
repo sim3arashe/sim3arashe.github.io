@@ -1,0 +1,12 @@
+Opthalmolgy	<img src="images/flaticon/svg/retinal-detach.svg" alt="Image" class="">
+
+
+Optometry	<img src="images/flaticon/svg/comprehensive.svg" alt="Image" class="">
+
+
+Optical Devices
+-contact lens asses 	<img src="images/flaticon/svg/cataract.svg" alt="Image" class=""> 
+
+Screening 	<img src="images/flaticon/svg/gluacoma.svg" alt="Image" class="">
+
+6 + 9
