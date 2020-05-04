@@ -1,4 +1,12 @@
 /* Base */
+
+@media ( orientation:portrait){
+  .payment-options{
+    display: none;
+    visibility:hidden;
+  }
+}
+
 html {
   overflow-x: hidden; }
 
