@@ -49,6 +49,14 @@ p li{
   }
 }
 
+@media ( orientation:landscape){
+  .mobile-option{
+    display: none;
+    visibility:hidden;
+  }
+}
+
+
 
 .overlay-women
     {
@@ -1700,7 +1708,7 @@ h1, h2, h3, h4, h5,
 .quick-contact-form {
   padding: 50px;
   border-radius: 7px;
-  margin-top: -200px;
+  margin-top: -640px;
   -webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1); }
   .quick-contact-form h2 {
